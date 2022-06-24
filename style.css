@@ -1,6 +1,7 @@
 body {
     /* need to define height for align-items to work*/
     display: flex;
+    flex-direction: column;
     justify-content : center;
     align-items: center;
 
