@@ -8,7 +8,7 @@ body {
 
 #container {
     display: flex;
-    flex-wrap : wrap;
+    flex-direction: column;
     
     align-content: center;
     max-height: 600px;
@@ -18,7 +18,11 @@ body {
     background-color: red;
     
 }
-
+.sub {
+    display: flex;
+    flex: 1 1 auto;
+    min-height : 0;
+}
 .box {
     width: 32px;
     height: 30px;
