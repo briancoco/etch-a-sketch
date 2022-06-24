@@ -1,19 +1,6 @@
 //nested for loop to create all the divs needed 
 // use flexbox to make them display in rows and wrap if no space on line
 //adds divs to the container 
-const container = document.querySelector('#container');
-const gridSize = document.querySelector('.grid-size');
-
-for(let i = 0; i < 4; i++) {
-    for(let j = 0; j < 4; j++) {
-        const div = document.createElement('div');
-        div.className = 'box';
-        div.style.border = "1px solid black"
-        div.addEventListener('mouseover', () => div.style.backgroundColor = 'blue');
-        container.appendChild(div);
-        
-    }
-}
 function removeBoxes() {
     while(container.firstChild) {
         container.removeChild(container.firstChild);
@@ -36,6 +23,21 @@ function changeGridSize() {
         }
     }
     container.style.cssText = `grid-template-columns : repeat(${size}, 1fr); grid-template-rows: repeat(${size}, 1fr);`;
+}
+
+
+const container = document.querySelector('#container');
+const gridSize = document.querySelector('.grid-size');
+
+for(let i = 0; i < 4; i++) {
+    for(let j = 0; j < 4; j++) {
+        const div = document.createElement('div');
+        div.className = 'box';
+        div.style.border = "1px solid black"
+        div.addEventListener('mouseover', () => div.style.backgroundColor = 'blue');
+        container.appendChild(div);
+        
+    }
 }
 
 
