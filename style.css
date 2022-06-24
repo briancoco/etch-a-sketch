@@ -1,0 +1,23 @@
+body {
+    /* need to define height for align-items to work*/
+    display: flex;
+    justify-content : center;
+    align-items: center;
+
+}
+
+#container {
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 650px;
+    width: 590px;
+    
+}
+
+.box {
+    width: 32px;
+    height: 30px;
+}
