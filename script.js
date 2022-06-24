@@ -2,17 +2,14 @@
 // use flexbox to make them display in rows and wrap if no space on line
 //adds divs to the container 
 const container = document.querySelector('#container');
-for(let i = 0; i < 20; i++) {
-    const subcontainer = document.createElement('div');
-    subcontainer.className = 'sub';
-    for(let j = 0; j < 20; j++) {
+for(let i = 0; i < 4; i++) {
+    for(let j = 0; j < 4; j++) {
         const div = document.createElement('div');
         div.className = 'box';
         div.style.border = "2px solid black"
-        subcontainer.appendChild(div);
+        container.appendChild(div);
         
     }
-    container.appendChild(subcontainer);
 }
 
 //make nodelist of all boxes
