@@ -35,20 +35,13 @@ function changeGridSize() {
     container.style.cssText = `grid-template-columns : repeat(${size}, 1fr); grid-template-rows: repeat(${size}, 1fr);`;
 }
 
-
-function changeColor(color) {
-    //grab input from menu
-    //if input == certain color then div.style.backgroundColor = 'certain color
-    if(color === 'black') {
-        div.style.backgroundColor = 'black';
-    }
-    if(color === 'red') {
-        div.style.backgroundColor = 'red';
-    }
-    if(color === 'blue') {
-        div.style.backgroundColor = 'blue';
-    }
+function clearBoxes() {
+    const boxes = document.querySelectorAll('.box');
+    boxes.forEach((box) => {
+        box.style.backgroundColor = 'white';
+    })
 }
+
 
 const container = document.querySelector('#container');
 const gridSize = document.querySelector('.grid-size');
@@ -57,6 +50,7 @@ const colors = document.querySelector('#colors');
 colors.addEventListener('change', (e) => {
     color = e.target.value;
 })
+const clear = document.querySelector('.clear');
 
 for(let i = 0; i < 16; i++) {
     for(let j = 0; j < 16; j++) {
@@ -89,3 +83,4 @@ for(let i = 0; i < 16; i++) {
 
 
 gridSize.addEventListener('click', changeGridSize);
+clear.addEventListener('click', clearBoxes);
