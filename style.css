@@ -14,6 +14,7 @@ body {
 
 h1 {
     font-family: brownCustom;
+    margin-bottom: 30px;
 }
 
 #container {
@@ -25,6 +26,7 @@ h1 {
     max-width: 600px;
     min-width: 600px;
     margin-top: 30px;
+    border-width: 5px;
 }
 
 #buttons {
@@ -41,7 +43,18 @@ h1 {
 }
 #colors {
     font-family: brownCustom;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: black;
+    background-color: rgb(233, 131, 214);
 }
 option {
     font-family: brownCustom;
+}
+
+.clear {
+    font-family: brownCustom;
+    border-radius: 5px;
+    border-color: black;
+    background-color: rgb(233, 131, 214);
 }

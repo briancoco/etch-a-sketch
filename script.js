@@ -17,6 +17,7 @@ function changeGridSize() {
             const div = document.createElement('div');
             div.className = 'box';
             div.style.border = "1px solid black"
+            div.style.backgroundColor = 'white';
             div.addEventListener('mouseover', () => {
                 if(color === 'black') {
                     div.style.backgroundColor = 'black';
@@ -57,6 +58,7 @@ for(let i = 0; i < 16; i++) {
         const div = document.createElement('div');
         div.className = 'box';
         div.style.border = "1px solid black"
+        div.style.backgroundColor = 'white';
         div.addEventListener('mouseover', () => {
             if(color === 'black') {
                 div.style.backgroundColor = 'black';
