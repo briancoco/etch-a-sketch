@@ -9,13 +9,12 @@ body {
 
 #container {
     display: grid;
-    grid-template-columns : repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns : repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
     max-height: 600px;
     min-height: 600px;
     max-width: 600px;
     min-width: 600px;
-    background-color: red;
     
 }
 

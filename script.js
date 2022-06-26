@@ -29,8 +29,8 @@ function changeGridSize() {
 const container = document.querySelector('#container');
 const gridSize = document.querySelector('.grid-size');
 
-for(let i = 0; i < 4; i++) {
-    for(let j = 0; j < 4; j++) {
+for(let i = 0; i < 16; i++) {
+    for(let j = 0; j < 16; j++) {
         const div = document.createElement('div');
         div.className = 'box';
         div.style.border = "1px solid black"
@@ -50,3 +50,8 @@ for(let i = 0; i < 4; i++) {
 
 
 gridSize.addEventListener('click', changeGridSize);
+
+const colors = document.querySelector('#colors');
+colors.addEventListener('change', (e) => {
+    console.log(e.target.value);
+})
