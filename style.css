@@ -10,6 +10,7 @@ body {
     justify-content : center;
     align-items: center;
     background-color: rgb(233, 131, 214);
+
 }
 
 h1 {
@@ -26,7 +27,6 @@ h1 {
     max-width: 600px;
     min-width: 600px;
     margin-top: 30px;
-    border-width: 5px;
 }
 
 #buttons {
@@ -57,4 +57,23 @@ option {
     border-radius: 5px;
     border-color: black;
     background-color: rgb(233, 131, 214);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    font-family: brownCustom;
+    gap: 15px;
+}
+img {
+    width: 50px;
+    height: auto;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
