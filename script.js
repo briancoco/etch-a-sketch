@@ -17,7 +17,17 @@ function changeGridSize() {
             const div = document.createElement('div');
             div.className = 'box';
             div.style.border = "1px solid black"
-            div.addEventListener('mouseover', () => div.style.backgroundColor = 'blue');
+            div.addEventListener('mouseover', () => {
+                if(color === 'black') {
+                    div.style.backgroundColor = 'black';
+                }
+                if(color === 'red') {
+                    div.style.backgroundColor = 'red';
+                }
+                if(color === 'blue') {
+                    div.style.backgroundColor = 'blue';
+                }
+            });
             container.appendChild(div);
             
         }
@@ -26,15 +36,44 @@ function changeGridSize() {
 }
 
 
+function changeColor(color) {
+    //grab input from menu
+    //if input == certain color then div.style.backgroundColor = 'certain color
+    if(color === 'black') {
+        div.style.backgroundColor = 'black';
+    }
+    if(color === 'red') {
+        div.style.backgroundColor = 'red';
+    }
+    if(color === 'blue') {
+        div.style.backgroundColor = 'blue';
+    }
+}
+
 const container = document.querySelector('#container');
 const gridSize = document.querySelector('.grid-size');
+let color = 'black';
+const colors = document.querySelector('#colors');
+colors.addEventListener('change', (e) => {
+    color = e.target.value;
+})
 
 for(let i = 0; i < 16; i++) {
     for(let j = 0; j < 16; j++) {
         const div = document.createElement('div');
         div.className = 'box';
         div.style.border = "1px solid black"
-        div.addEventListener('mouseover', () => div.style.backgroundColor = 'blue');
+        div.addEventListener('mouseover', () => {
+            if(color === 'black') {
+                div.style.backgroundColor = 'black';
+            }
+            if(color === 'red') {
+                div.style.backgroundColor = 'red';
+            }
+            if(color === 'blue') {
+                div.style.backgroundColor = 'blue';
+            }
+        });
         container.appendChild(div);
         
     }
@@ -50,8 +89,3 @@ for(let i = 0; i < 16; i++) {
 
 
 gridSize.addEventListener('click', changeGridSize);
-
-const colors = document.querySelector('#colors');
-colors.addEventListener('change', (e) => {
-    console.log(e.target.value);
-})
