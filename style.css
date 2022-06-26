@@ -1,10 +1,19 @@
+@font-face {
+    font-family : brownCustom;
+    src : url(font.TTF);
+}
+
 body {
     /* need to define height for align-items to work*/
     display: flex;
     flex-direction: column;
     justify-content : center;
     align-items: center;
+    background-color: rgb(233, 131, 214);
+}
 
+h1 {
+    font-family: brownCustom;
 }
 
 #container {
@@ -15,6 +24,24 @@ body {
     min-height: 600px;
     max-width: 600px;
     min-width: 600px;
-    
+    margin-top: 30px;
 }
 
+#buttons {
+    font-family: brownCustom;
+    display: flex;
+    gap: 50px;
+}
+
+.grid-size {
+    font-family: brownCustom;
+    border-radius: 5px;
+    border-color: black;
+    background-color: rgb(233, 131, 214);
+}
+#colors {
+    font-family: brownCustom;
+}
+option {
+    font-family: brownCustom;
+}
